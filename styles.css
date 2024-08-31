@@ -16,13 +16,23 @@ body {
 
 #heading, #content {
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .word {
     display: inline-block;
     background-color: #ccc;
-    height: 20px;
-    margin: 0 5px 5px 0;
+    height: 1.2em;
+    margin: 0 2px 2px 0;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 1.2em;
+    padding: 0 2px;
+}
+
+.revealed {
+    background-color: transparent;
+    color: black;
 }
 
 #input-area {
@@ -42,4 +52,18 @@ body {
 
 #score {
     font-size: 18px;
+}
+
+.punctuation {
+    display: inline-block;
+    margin: 0 1px;
+    vertical-align: middle;
+}
+
+#word-measure {
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    white-space: nowrap;
 }
